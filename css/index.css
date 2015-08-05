@@ -1,0 +1,166 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding-top: 100px;
+}
+
+a:hover {
+    text-decoration: none;
+    outline:none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+.nav-boxshadow {
+    box-shadow: 0 2px #A6D8FF;
+}
+
+.ul-position {
+    margin-left: 100px;
+    font-size: 18px;
+}
+
+.nav-li-position {
+    margin-right: 30px;
+}
+#nav-logo-a{
+    padding: 0;
+    margin-left: 0;
+    margin-top: 0;
+}
+.logo-position {
+    width: 200px;
+    height: 81px;
+    background-color: #52c3dd;
+    float: left;
+}
+
+.logo-span-img {
+    color: #FFFFFF;
+    font-size: 35px;
+    margin-top: 25px;
+    margin-left: 30px;
+}
+
+.logo-span-font {
+    color: #FFFFFF;
+    font-size: 30px;
+    margin-left: 30px;
+    position: relative;
+    top: -8px;
+}
+
+.user-logo {
+    width: 50px;
+    height: 50px;
+    margin-top: -16px;
+}
+
+#search-input {
+    border: 0;
+    margin-left: 50px;
+}
+
+#button-search {
+    margin-left: -45px;
+    border: 0;
+}
+
+.sidebar-left {
+    float: left;
+    position: fixed;
+
+}
+.dropdown-border {
+    padding-right: 10px;;
+}
+
+.sidebar-left-li {
+   padding: 10px 0px 15px 30px;
+    background-color: #e0eaec;
+    border-radius:0;
+    border-top-left-radius: none;
+    border-top-right-radius: none; 
+}
+
+.content {
+    float: left;
+
+}
+
+.program {
+    padding: 0;
+        position: absolute;
+    left: 233px;
+}
+
+.panel-p {
+    display: inline;
+    position: relative;
+    left: 750px;
+    color: #a6a6a6;
+}
+
+.content-follow {
+    position: relative;
+    top: 10px;
+    left: 10px;
+    color: inherit;
+}
+
+.content-comment {
+    position: relative;
+    top: 10px;
+    left: 30px;
+    color: inherit;
+}
+
+.sidebar-left-tag {
+    width: 150px;
+    height: 43px;
+   background-color: #707070;
+    text-align: center;
+    border-radius: 5px;
+}
+.sidebar-left-span{
+        position: relative;
+    color: #FFFFFF;
+    font-size:16px;
+    font-weight: 700;
+    position: relative;
+    top: 10px;
+}
+
+.panel-border {s
+    border-color: #a6d8ff;
+}
+.sidebar-right{
+    height: 200px;
+    float: right; 
+        position: fixed;
+    left: 83.5% 
+}
+.sidebar-right-sec{
+    background-color: #e0eaec;
+}
+.sidebar-right-rec{
+    height: 300px;
+
+}
+.sidebar-right-dl{
+    font-size: 16px;
+    
+    text-align: center;
+}
+.sidebar-right-dt{
+    
+    padding-top: 40px;
+    padding-bottom: 20px;
+
+}
+
