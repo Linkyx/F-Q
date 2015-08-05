@@ -164,3 +164,17 @@ a:visited {
 
 }
 
+.titleclass{
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+.contentclass{
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.submitclass{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
