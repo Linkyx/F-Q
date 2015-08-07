@@ -7,15 +7,6 @@ body {
     padding-top: 100px;
 }
 
-a:hover {
-    text-decoration: none;
-    outline:none;
-}
-
-a:visited {
-    text-decoration: none;
-}
-
 .nav-boxshadow {
     box-shadow: 0 2px #A6D8FF;
 }
@@ -82,7 +73,6 @@ a:visited {
 
 .sidebar-left-li {
    padding: 10px 0px 15px 30px;
-    background-color: #e0eaec;
     border-radius:0;
     border-top-left-radius: none;
     border-top-right-radius: none; 
@@ -102,15 +92,16 @@ a:visited {
 .panel-p {
     display: inline;
     position: relative;
-    left: 750px;
+    left: 75%;
     color: #a6a6a6;
 }
 
 .content-follow {
     position: relative;
     top: 10px;
-    left: 10px;
+    left: 0px;
     color: inherit;
+    margin-right: 30px;
 }
 
 .content-comment {
@@ -122,7 +113,7 @@ a:visited {
 
 .sidebar-left-tag {
     width: 150px;
-    height: 43px;
+    height: 35px;
    background-color: #707070;
     text-align: center;
     border-radius: 5px;
@@ -133,17 +124,19 @@ a:visited {
     font-size:16px;
     font-weight: 700;
     position: relative;
-    top: 10px;
+    top: 7.5px;
 }
 
-.panel-border {s
+.panel-border {
     border-color: #a6d8ff;
 }
 .sidebar-right{
     height: 200px;
     float: right; 
-        position: fixed;
-    left: 83.5% 
+    position: fixed;
+    left: 83.5% ;
+    padding-right:0px;
+
 }
 .sidebar-right-sec{
     background-color: #e0eaec;
@@ -163,4 +156,39 @@ a:visited {
     padding-bottom: 20px;
 
 }
+.info-pro{
+    float: left;
+    position: relative;
+    left: 400px;
 
+}
+.info-pro-user{
+    position: relative;
+    float: left;
+    left: -50px;
+
+}
+ 
+.info-pro-all{
+
+    width: 600px;
+ float: left;
+}
+.info-pro-content{
+width: 600px;
+}
+.info-pro-review{
+    clear: both;
+}
+.review-content{
+    width: 600px;
+    float: left;
+}
+.panel-review-body{
+    position: relative;
+    left: 400px;
+}
+.panel-pro-content{
+    position: relative;
+    left: 400px;
+}
