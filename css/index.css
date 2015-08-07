@@ -161,6 +161,7 @@ body {
     position: relative;
     left: 400px;
 
+
 }
 .info-pro-user{
     position: relative;
@@ -191,4 +192,33 @@ width: 600px;
 .panel-pro-content{
     position: relative;
     left: 400px;
+}
+.titleclass{
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+.contentclass{
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.submitclass{
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+}
+.titleclass{
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+.contentclass{
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.submitclass{
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
