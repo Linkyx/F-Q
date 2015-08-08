@@ -80,14 +80,12 @@ body {
 }
 
 .content {
-    float: left;
 
 }
 
 .program {
     padding: 0;
-        position: absolute;
-    left: 233px;
+    
 }
 
 .panel-p {
@@ -132,12 +130,7 @@ body {
     border-color: #a6d8ff;
 }
 .sidebar-right{
-    height: 200px;
-    float: right; 
-    position: fixed;
-    left: 83.5% ;
-    padding-right:10px;
-
+    margin-right: 10px;
 }
 .sidebar-right-sec{
     background-color: #52C3DD;
@@ -160,14 +153,14 @@ body {
 .info-pro{
     float: left;
     position: relative;
-    left: 400px;
+    left: 100px;
 
 
 }
 .info-pro-user{
     position: relative;
     float: left;
-    left: -50px;
+ 
 
 }
  
@@ -188,7 +181,9 @@ width: 600px;
 }
 .panel-review-body{
     position: relative;
-    left: 400px;
+    clear: both;
+        left: 450px;
+    top: -25px;
 }
 .panel-pro-content{
     position: relative;
