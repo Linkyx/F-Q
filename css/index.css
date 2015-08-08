@@ -31,6 +31,7 @@ body {
     float: left;
 }
 
+
 .logo-span-img {
     color: #FFFFFF;
     font-size: 35px;
@@ -135,11 +136,11 @@ body {
     float: right; 
     position: fixed;
     left: 83.5% ;
-    padding-right:0px;
+    padding-right:10px;
 
 }
 .sidebar-right-sec{
-    background-color: #e0eaec;
+    background-color: #52C3DD;
 }
 .sidebar-right-rec{
     height: 300px;
