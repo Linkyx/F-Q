@@ -10,6 +10,14 @@
     <link rel="stylesheet" href="../bootstrap-3.3.5/dist/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="../css/index.css"/>
 
+    <link rel="stylesheet" type="text/css" href="../simditor-2.2.3/styles/simditor.css" />
+
+    <script type="text/javascript" src="../simditor-2.2.3/scripts/jquery.min.js"></script>
+    <script type="text/javascript" src="../simditor-2.2.3/scripts/module.js"></script>
+    <script type="text/javascript" src="../simditor-2.2.3/scripts/hotkeys.js"></script>
+    <script type="text/javascript" src="../simditor-2.2.3/scripts/uploader.js"></script>
+    <script type="text/javascript" src="../simditor-2.2.3/scripts/simditor.js"></script>
+
 </head>
 <body>
 
@@ -56,7 +64,7 @@
 </nav>
 
 <section class="container-fluid row">
-    <nav class="sidebar-left col-lg-2">
+        <nav class="sidebar-left col-lg-2">
         <ul class="list-group">
             <li class=" sidebar-left-li list-group-item "><a href="#"><div class="sidebar-left-tag"><span class="sidebar-left-span">123</span></div></a>
             </li>
@@ -69,21 +77,21 @@
             </li>
             <li class="list-group-item sidebar-left-li"><a href="#"><div class="sidebar-left-tag"><span class="sidebar-left-span">123</span></div></a></li>
             <li class="list-group-item sidebar-left-li"><a href="#"><div class="sidebar-left-tag"><span class="sidebar-left-span">123</span></div></a></li>
-
-
         </ul>
     </nav>
 
-    <div class="content col-lg-8 program" style="text-align: right">
+    <div class="content col-lg-8 program" style="padding-bottom: 30px; padding-right: 30px;">
         <form>
             <input type="title" class="form-control titleclass" id="title" placeholder="标题" >
-            <textarea class="form-control contentclass" rows="20" placeholder="内容"></textarea>
-            <input type="tags" class="form-control" id="tags"  placeholder="标签">
-            <button type="button" class="btn btn-info submitclass">发表</button>
+            <textarea id="content" class="form-control contentclass" rows="20" placeholder="内容"></textarea>
+            <input type="tags" class="form-control tagsclass" id="tags"  placeholder="标签">
+            <div style="text-align:right">
+                        <button type="button" class="btn btn-info submitclass">发表</button>
+            </div>
         </form>
     </div>
 
-    <nav class="sidebar-right col-lg-2">
+        <nav class="sidebar-right col-lg-2 ">
         <section class = "sidebar-right-sec">
             <div class= "sidebar-right-rec">
                 <dl class = "sidebar-right-dl">
@@ -108,5 +116,10 @@
 
 <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script>
+    var content = new Simditor({
+        textarea: $('#content')
+    });
+</script>
 </body>
 </html>

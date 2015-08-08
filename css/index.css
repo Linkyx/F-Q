@@ -207,19 +207,10 @@ width: 600px;
 .submitclass{
     margin-bottom: 20px;
     margin-top: 20px;
-
+     text-align: right;
 }
-.titleclass{
-    margin-top: 15px;
+
+.tagsclass{
+    margin-top: 30px;
     margin-bottom: 25px;
-}
-
-.contentclass{
-    margin-top: 20px;
-    margin-bottom: 25px;
-}
-
-.submitclass{
-    margin-bottom: 20px;
-    margin-top: 20px;
 }
