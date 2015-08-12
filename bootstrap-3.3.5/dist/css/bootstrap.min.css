@@ -4850,7 +4850,7 @@ select[multiple].input-group-sm > .form-control, select[multiple].input-group-sm
 
     .navbar-right {
         float: right !important;
-        margin-right: -15px
+
     }
 
     .navbar-right ~ .navbar-right {

@@ -1,99 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1"/>
-    <meta name="edscription" content="app, web app, xiyoulinux, "/>
-    <title>XiyouLinux_FAQ</title>
-
-    <link rel="stylesheet" href="../bootstrap-3.3.5/dist/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="../css/index.css"/>
-
-</head>
-<body>
-
-<nav class="navbar navbar-default nav-boxshadow navbar-fixed-top ">
-    <div class="container-fluid ">
-        <a class="navbar-brand" id="nav-logo-a" href="#">
-            <div class="logo-position">
-                <span class="glyphicon glyphicon-comment logo-span-img"></span>
-                <span class="logo-span-font">F&Q</span>
-            </div>
-        </a>
-
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1 ">
-            <form class="navbar-form navbar-left" role="search">
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Search" id="search-input">
-                </div>
-                <button type="submit" class="btn btn-default" id="button-search"><span
-                        class="glyphicon glyphicon-search"> </span></button>
-            </form>
-
-            <ul class="nav navbar-nav ul-position ">
-                <li class="nav-li-position"><a href="#"><span class="glyphicon glyphicon-edit"> </span> 发表问题</a></li>
-                <li class="nav-li-position"><a href="#"><span class="glyphicon glyphicon-level-up"> </span> 我的问题</a>
-                </li>
-                <li class="nav-li-position"><a href="#"><span class="glyphicon glyphicon-bell"> </span> 通知</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right ">
-                <li><a href="#"><img src="../images/1.jpg" alt="user-logo" class="img-circle user-logo"></a></li>
-                <li class="dropdown dropdown-border">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                       aria-expanded="false">Dropdown <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#">Separated link</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
-
-<section class="container-fluid row">
-    <div class="col-lg-2">
-    <nav class="sidebar-left ">
-        <ul class="list-group">
-            <li class="list-group-item sidebar-left-li"><a href="#">
-                <div class="sidebar-left-tag"><span class="sidebar-left-span">123</span></div>
-            </a>
-            </li>
-            <li class="list-group-item sidebar-left-li"><a href="#">
-                <div class="sidebar-left-tag"><span class="sidebar-left-span">456456</span></div>
-            </a></li>
-            <li class="list-group-item sidebar-left-li"><a href="#">
-                <div class="sidebar-left-tag"><span class="sidebar-left-span">1212113</span></div>
-            </a></li>
-            <li class="list-group-item sidebar-left-li"><a href="#">
-                <div class="sidebar-left-tag"><span class="sidebar-left-span">123</span></div>
-            </a></li>
-            <li class="list-group-item sidebar-left-li"><a href="#">
-                <div class="sidebar-left-tag"><span class="sidebar-left-span">123</span></div>
-            </a></li>
-            <li class="list-group-item sidebar-left-li"><a href="#">
-                <div class="sidebar-left-tag"><span class="sidebar-left-span">123</span></div>
-            </a></li>
-            <li class="list-group-item sidebar-left-li"><a href="#">
-                <div class="sidebar-left-tag"><span class="sidebar-left-span">123</span></div>
-            </a>
-            </li>
-            <li class="list-group-item sidebar-left-li"><a href="#">
-                <div class="sidebar-left-tag"><span class="sidebar-left-span">123</span></div>
-            </a></li>
-            <li class="list-group-item sidebar-left-li"><a href="#">
-                <div class="sidebar-left-tag"><span class="sidebar-left-span">123</span></div>
-            </a></li>
-
-
-        </ul>
-    </nav>
-
-</div>
+{extends file="index.tpl"}
+{block name="content"}
     <section class="info-pro col-lg-8">
         <div class="info-pro-user">
             <img src="...">
@@ -113,14 +19,15 @@
                     男孩总是会低着头走路，几个楼层一共有多少个台阶他都数过，他知道楼梯上哪个地方的黑点最多，哪个地方的黑点最少。
                     男孩回到班级，一只只陌生的眼睛看向他，本来就不白的脸再加上害羞的红色瞬间变成了酱紫色，活像一只熟透的茄子，随便就找了一个空位坐下了，继续翻着他那几本怎么也写不完的暑假作业。
                     二</p>
-                    <div class="panel-body panel-pro-content">
+
+                <div class="panel-body panel-pro-content">
                     <a href="..."><span class="glyphicon glyphicon-plus content-follow">关注</span></a>
                     <a href="..."><span class="glyphicon glyphicon-comment content-comment">评论</span></a>
+                </div>
             </div>
-            </div>
-             <hr>
+            <hr>
         </div>
-       
+
 
         <div class="info-pro-review">
 
@@ -174,27 +81,4 @@
         </div>
 
     </section>
-
-<div class="col-lg-2">
-    <nav class="sidebar-right ">
-        <section class="sidebar-right-sec">
-            <div class="sidebar-right-rec">
-                <dl class="sidebar-right-dl">
-                    <dt class="sidebar-right-dt">
-                        精彩推荐
-                    </dt>
-                    <dd>
-                        <a href="...">0.0<a/>
-                    </dd>
-                    <dd>
-                        <a href="...">0.0<a/>
-                    </dd>
-                    <dd>
-                        <a href="...">0.0<a/>
-                    </dd>
-                </dl>
-            </div>
-        </section>
-    </nav>
-</div>
-</section>
+{/block}
