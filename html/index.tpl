@@ -11,7 +11,7 @@
             </a>
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1 ">
-                <form class="navbar-form navbar-left" role="search">
+                <form class="navbar-form navbar-left" role="search" action="search.php" method="post">
                     <div class="form-group">
                         <input type="text" class="form-control" placeholder="Search" id="search-input">
                     </div>
@@ -26,11 +26,13 @@
                     </li>
                     <li class="nav-li-position"><a href="#"><span class="glyphicon glyphicon-bell"> </span> 通知</a></li>
                 </ul>
-                <ul class="nav navbar-nav navbar-right ">
-                    <li><a href="#"><img src="./images/1.jpg" alt="user-logo" class="img-circle user-logo"></a></li>
+
+                {section name=n loop=$user_info} 
+                <ul class="nav navbar-nav navbar-right " id="user_info">
+                    <li><a href="#"><img src="{$user_info[n].imgs}" alt="user-logo" class="img-circle user-logo"></a></li>
                     <li class="dropdown dropdown-border">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                           aria-expanded="false">Dropdown <span class="caret"></span></a>
+                           aria-expanded="false">{$user_info[n].name} <span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="#">Action</a></li>
                             <li><a href="#">Another action</a></li>
@@ -40,19 +42,22 @@
                         </ul>
                     </li>
                 </ul>
+                {/section}
             </div>
         </div>
     </nav>
 {/block}
 
 {block name="content"}
+{section name=n loop=$question_list}
+        {section name=m loop=$question_list[n]}
     <div class=" col-lg-8">
         <div class="content program">
             <div class="panel  panel-primary panel-border">
                 <div class="panel-heading">
-                    <h3 class="panel-title">Panel title</h3>
+                   <a href="question.php?q={$question_list[n][m].qid}"> <h3 class="panel-title">{$question_list[n][m].title}</h3></a>
 
-                    <p class="panel-p"><span class="glyphicon glyphicon-time"></span> 发表时间 </p>
+                    <p class="panel-p"><span class="glyphicon glyphicon-time"></span> {$question_list[n][m].time} </p>
                 </div>
                 <div class="panel-body">
                     <p>
@@ -61,74 +66,10 @@
                     <a href="..."><span class="glyphicon glyphicon-comment content-comment">评论</span></a>
                 </div>
             </div>
-            <div class="panel panel-primary panel-border">
-                <div class="panel-heading ">
-                    <h3 class="panel-title">Panel title</h3>
-
-                    <p class="panel-p"><span class="glyphicon glyphicon-time"></span> 发表时间 </p>
-                </div>
-                <div class="panel-body ">
-                    <a href="..."><span class="glyphicon glyphicon-plus content-follow">关注</span></a>
-                    <a href="..."><span class="glyphicon glyphicon-comment content-comment">评论</span></a>
-                </div>
-            </div>
-            <div class="panel panel-primary panel-border">
-                <div class="panel-heading">
-                    <h3 class="panel-title">Panel title</h3>
-
-                    <p class="panel-p"><span class="glyphicon glyphicon-time"></span> 发表时间 </p>
-                </div>
-                <div class="panel-body">
-                    <a href="..."><span class="glyphicon glyphicon-plus content-follow">关注</span></a>
-                    <a href="..."><span class="glyphicon glyphicon-comment content-comment">评论</span></a>
-                </div>
-            </div>
-            <div class="panel panel-primary panel-border">
-                <div class="panel-heading">
-                    <h3 class="panel-title">Panel title</h3>
-
-                    <p class="panel-p"><span class="glyphicon glyphicon-time"></span> 发表时间 </p>
-                </div>
-                <div class="panel-body">
-                    <a href="..."><span class="glyphicon glyphicon-plus content-follow">关注</span></a>
-                    <a href="..."><span class="glyphicon glyphicon-comment content-comment">评论</span></a>
-                </div>
-            </div>
-            <div class="panel panel-primary panel-border">
-                <div class="panel-heading">
-                    <h3 class="panel-title">Panel title</h3>
-
-                    <p class="panel-p"><span class="glyphicon glyphicon-time"></span> 发表时间 </p>
-                </div>
-                <div class="panel-body">
-                    <a href="..."><span class="glyphicon glyphicon-plus content-follow">关注</span></a>
-                    <a href="..."><span class="glyphicon glyphicon-comment content-comment">评论</span></a>
-                </div>
-            </div>
-            <div class="panel panel-primary panel-border">
-                <div class="panel-heading">
-                    <h3 class="panel-title">Panel title</h3>
-
-                    <p class="panel-p"><span class="glyphicon glyphicon-time"></span> 发表时间 </p>
-                </div>
-                <div class="panel-body">
-                    <a href="..."><span class="glyphicon glyphicon-plus content-follow">关注</span></a>
-                    <a href="..."><span class="glyphicon glyphicon-comment content-comment">评论</span></a>
-                </div>
-            </div>
-            <div class="panel panel-primary panel-border">
-                <div class="panel-heading">
-                    <h3 class="panel-title">Panel title</h3>
-
-                    <p class="panel-p"><span class="glyphicon glyphicon-time"></span> 发表时间 </p>
-                </div>
-                <div class="panel-body">
-                    <a href="..."><span class="glyphicon glyphicon-plus content-follow">关注</span></a>
-                    <a href="..."><span class="glyphicon glyphicon-comment content-comment">评论</span></a>
-                </div>
-            </div>
         </div>
     </div>
+    {/section}
+    {/section}
 {/block}
 
 {block name="sidebar-left"}
@@ -136,37 +77,12 @@
     <div class="col-lg-2">
         <nav class="sidebar-left">
             <ul class="list-group">
+                {section name=n loop=$left_tags}
                 <li class="list-group-item sidebar-left-li"><a href="#">
-                        <div class="sidebar-left-tag"><span class="sidebar-left-span">123</span></div>
+                        <div class="sidebar-left-tag"><span class="sidebar-left-span">{$smarty.section.left_tags.index}</span></div>
                     </a>
                 </li>
-                <li class="list-group-item sidebar-left-li"><a href="#">
-                        <div class="sidebar-left-tag"><span class="sidebar-left-span">456456</span></div>
-                    </a></li>
-                <li class="list-group-item sidebar-left-li"><a href="#">
-                        <div class="sidebar-left-tag"><span class="sidebar-left-span">1212113</span></div>
-                    </a></li>
-                <li class="list-group-item sidebar-left-li"><a href="#">
-                        <div class="sidebar-left-tag"><span class="sidebar-left-span">123</span></div>
-                    </a></li>
-                <li class="list-group-item sidebar-left-li"><a href="#">
-                        <div class="sidebar-left-tag"><span class="sidebar-left-span">123</span></div>
-                    </a></li>
-                <li class="list-group-item sidebar-left-li"><a href="#">
-                        <div class="sidebar-left-tag"><span class="sidebar-left-span">123</span></div>
-                    </a></li>
-                <li class="list-group-item sidebar-left-li"><a href="#">
-                        <div class="sidebar-left-tag"><span class="sidebar-left-span">123</span></div>
-                    </a>
-                </li>
-                <li class="list-group-item sidebar-left-li"><a href="#">
-                        <div class="sidebar-left-tag"><span class="sidebar-left-span">123</span></div>
-                    </a></li>
-                <li class="list-group-item sidebar-left-li"><a href="#">
-                        <div class="sidebar-left-tag"><span class="sidebar-left-span">123</span></div>
-                    </a></li>
-
-
+                {/section}
             </ul>
         </nav>
     </div>
@@ -182,19 +98,24 @@
                         <dt class="sidebar-right-dt">
                             精彩推荐
                         </dt>
+                        {section name=n loop=$right_rec}
                         <dd>
-                            <a href="...">0.0<a/>
+                            <a href="...">{$smarty.section.right_rec.index}<a/>
                         </dd>
-                        <dd>
-                            <a href="...">0.0<a/>
-                        </dd>
-                        <dd>
-                            <a href="...">0.0<a/>
-                        </dd>
+                        {/section}
                     </dl>
                 </div>
             </section>
         </nav>
     </div>
 </section>
+{/block}
+
+{block name="scripts"}
+    if($user_isnot_login){
+        var user = document.getElementByid("user_info");
+        var info = "<li><img src=\".....\" alt=\"sign in\"></li>";
+        user.innerHTML=info;
+    }
+
 {/block}

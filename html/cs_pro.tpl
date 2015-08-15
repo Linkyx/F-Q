@@ -2,7 +2,7 @@
 {block name="content"}
     <div class="col-lg-8">
         <div class="content  program" style="padding-bottom: 30px; padding-right: 30px;">
-            <form>
+            <form action="addquestion.php" method="post">
                 <input type="title" class="form-control titleclass" id="title" placeholder="标题">
                 <textarea id="content" class="form-control contentclass" rows="20" placeholder="内容"></textarea>
                 <input type="tags" class="form-control tagsclass" id="tags" placeholder="标签">
